@@ -21,8 +21,8 @@ apt-get install -y uwsgi-plugin-python
 #install pip
 apt-get install -y python-pip
 
-#svn
-apt-get install -y subversion
+#git
+apt-get install -y git
 
 #install virtualenv
 apt-get install -y python-virtualenv
@@ -46,7 +46,7 @@ fi
 cd /home/work
 
 #TODO username
-svn co https://subversion.assembla.com/svn/cnfuyu/trunk/cnfuyu-blog
+git clone https://github.com/cnfuyu/cnfuyu-blog.git
 
 cd /home/work/cnfuyu-blog
 
