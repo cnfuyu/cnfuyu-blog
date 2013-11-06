@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% import "macros.html" as macros with context %}
+
+{% block content %}
+    {% for article in articles %}
+        {{ macros.gen_article(article) }}
+    {% else %}
+        <article>
+            <div class="entry-header">
+                <div class="entry-title">No article to show.</div>
+            </div>
+            <div class="entry-content">
+               Sorry, this blog has no article. 
+            </div>
+        </article>
+    {% endfor %}
+
+    <nav id="nav-below">
+        {% if prevpage %}
+            <div class="nav-prev"><a href="/blog/page/{{ prevpage }}">< Prev</a></div>
+        {% endif %}
+        {% if nextpage %}
+            <div class="nav-next"><a href="/blog/page/{{ nextpage }}">Next ></a></div>
+        {% endif %}
+    </nav>
+    <div style="clear: both"></div>
+{% endblock content %}
