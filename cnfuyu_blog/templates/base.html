@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>{% block title %} CNFUYU {% endblock title %}</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="robots" content="all">
+        <meta name="Author" content="cnfuyu<cnfuyu@gmail.com>">
+        <meta name="Keywords" content="blog, python, flask, markdown">
+        <meta name="Description" content="CNFUYU's blog.">
+        <link rel="stylesheet" href="/static/css/style.css" type="text/css" media="screen">
+        <script type="text/javascript" src="/static/js/google_analytics.js"></script>
+    </head>
+    <body>
+    {% block body %}
+        <div id="wrap">
+            <aside>
+                <h1 id="site-title">
+                    <a href="/blog/home" title="CNFUYU">CNFUYU</a>
+                </h1>
+                <section id="aboutMe">
+                    <p class="avatar"><img src="/static/images/home.jpg" width="250"></p>
+                    <h4>
+                        关于我：
+                    </h4>
+                    <p>
+                        华中科技大学2011级电信系本科生。<a href="/resume">更多介绍</a>
+                    </p>
+                    <p class="social">
+                        <a target="_black" href="/blog/feed"><img src="/static/images/icons/color/rss.png" width="32" height="32"></a>
+                        <a target="_black" href="https://github.com/cnfuyu"><img src="/static/images/icons/color/github.png" width="32" height="32"></a>
+                        <a target="_black" href="https://www.facebook.com/cnfuyu"><img src="/static/images/icons/color/facebook.png" width="32" height="32"></a>
+                        <a target="_black" href="https://twitter.com/cnfuyu"><img src="/static/images/icons/color/twitter.png" width="32" height="32"></a>
+                        <a target="_black" href="http://weibo.com/cnfuyu"><img src="/static/images/icons/color/weibo.png" width="32" height="32"></a>
+                    </p>
+                </section>
+                <section id="search" class="widget_search">
+                    <h2>Search</h2>
+                    <form id="searchform" role="search" method="get" action="https://www.google.com/cse" target="_blank">
+                        <input id="s" type="text" value name="q" placeholder="Search this site..."></input> 
+                        <input type="hidden" name="cx" value="009586649867730022028:vpxthogzsa0"></input>
+                        <input type="hidden" name="ie" value="UTF-8"></input>
+                        <input name="siteurl" type="hidden" value="www.cnfuyu.net"></input>
+                        <input id="searchsubmit" type="submit" value="Search">
+                    </form>
+                </section>
+            </aside>
+            <div id="main">
+                <div id="posts">
+                   {% block content %}{% endblock content %}
+                </div>
+            </div>
+            <div style="clear: both"></div>
+            <footer>
+                <div class="div-footer">
+                    &copy;2013 Powered by <a href="https://github.com/cnfuyu">CNFUYU</a>
+                </div>
+            </footer>
+        </div>
+    {% endblock body %}
+    </body>
+</html>

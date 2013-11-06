@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    background: #fff url("/static/images/bg.png") left top repeat;
+}
+
+body {
+    font: 15px Helvetica,"Hiragino Sans GB","Hiragino Sans GB W3",Arial,sans-serif; 
+    color: #4b4b4b;
+    -webkit-text-size-adjust: 100%;
+}
+
+code pre {
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+article, aside, section, footer, nav {
+    display: block;
+}
+
+#wrap {
+    width: 992px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+time {font-weight: bold;}
+
+aside {
+    float: left;
+    padding: 40px 20px 0;
+    width: 280px;
+    font-size: 14px;
+}
+
+#main {
+    background: white;
+    float: right;
+    width: 630px;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 40px 20px;
+}
+
+.ie6 #main {overflow-x: hidden;}
+.ie6 aside {overflow-x: hidden;}
+
+a img {border: 0;}
+
+a {
+    color: #5191c2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9dcedf;
+}
+
+
+
+/* Posts */
+article {
+    background: white;
+    margin-bottom: 5px;
+    padding-bottom: 25px;
+    border-bottom: 1px dashed #d2d2d2;
+}
+article .entry-header {
+    padding: 10px;
+}
+article .entry-header .entry-title {
+    line-height: 28px;
+    font-size: 28px;
+    margin-bottom: 4px;
+    word-wrap: break-word;
+}
+article .entry-header .entry-meta {
+    line-height: 18px;
+    font-size: 14px;
+    color: #666;
+}
+
+article .entry-content {
+    padding: 10px;
+}
+
+article .entry-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+article .entry-content ul, article .entry-content ol {
+    margin-bottom: 20px;
+    list-style-position: inside;
+}
+
+article .entry-content blockquote {
+    margin: 10px 0;
+    padding: 5px 0 5px 40px;
+    border-left: 5px #7d7d7d solid;
+}
+
+p {display: block; margin: 12px 0; line-height: 24px;}
+
+h1 {font-size: 2em; margin: 1em 0 15px;}
+
+h2 {font-size: 1.5em; margin: 1em 0 15px;}
+
+h3 {font-size: 1.17em; margin: 1em 0 15px;}
+
+h4 {margin-top: 3px; margin: 1em 0 15px;}
+
+h5 {font-size: 0.83em; margin: 1em 0 15px;}
+
+h6 {font-size: 0.75em; margin: 1em 0 15px;}
+
+ul, ol {margin: 10px 0 10px 20px;}
+
+li {margin-bottom: 5px;}
+
+blockquote {margin: 10px 0; padding: 0 15px; border-left: 4px #7d7d7d solid;}
+
+img {text-align: center; margin: 0 auto; max-width: 590px;}
+
+article pre code {
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    word-wrap: normal;
+}
+
+article pre{
+    background-color: rgb(248, 248, 248);
+    border: 1px solid rgb(221, 221, 221);
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+    border-radius: 3px;
+}
+
+/* page */
+.nav-prev {
+    float: left;
+    width: 200px;
+}
+
+.nav-next {
+    float: right;
+    width: 200px;
+    text-align: right;
+}
+
+/* aside */
+aside {
+    color: #4b4b4b; 
+    text-shadow: 1px 1px 1px #fff;
+}
+
+#site-title {
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    width: 100%;
+}
+
+aside section {
+    margin-top: 30px; 
+    padding: 15px;
+}
+
+aside h2 {
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    border-bottom: 1px dashed #d2d2d2;
+    padding: bottom: 7px;
+    margin-bottom: 10px;
+}
+
+aside section {
+    margin-top 30px;
+    padding: 15px;
+}
+
+/* search */
+input, textarea {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 242px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    font-size: 16px;
+    color: #4b4b4b;
+    outline-color: #9dcedf;
+}
+
+.widget_search #searchsubmit {
+    display: none;
+}
+
+/* About me */
+#aboutMe {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#aboutMe .social {
+    margin-top: 10px;
+}
+
+#aboutMe .social a {
+    margin-right: 6px;
+}
+
+/* footer */
+footer .div-footer{
+    font-size: 12px;
+    display: table;
+    text-align: center;
+    margin: 26px auto;
+}

@@ -1,0 +1,24 @@
+server {
+    listen 80;
+    server_name cnfuyu.net;
+
+    access_log /var/log/nginx/cnfuyu_blog_access.log;
+    error_log /var/log/nginx/cnfuyu_blog_error.log;
+
+    location ~ ^/favicon\.ico$ {
+        alias /home/work/cnfuyu-blog/cnfuyu_blog/static/images/favicon.ico;
+    }
+
+    location ^/static/ {
+        alias /home/work/cnfuyu-blog/cnfuyu_blog/static/;
+    }
+
+    location / {
+        include uwsgi_params;
+        uwsgi_pass 127.0.0.1:9000;
+        uwsgi_param UWSGI_PYHOME /home/pyenv/cnfuyu-blog;
+        uwsgi_param UWSGI_CHDIR /home/work/cnfuyu-blog;
+        uwsgi_param UWSGI_MODULE run;
+        uwsgi_param UWSGI_CALLABLE app;
+    }
+}
