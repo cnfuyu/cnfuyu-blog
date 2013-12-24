@@ -41,3 +41,7 @@ cnfuyu-blog由cnfuyu同学开发的轻量级博客程序。
 更新
 ----
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/cnfuyu/cnfuyu-blog/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
